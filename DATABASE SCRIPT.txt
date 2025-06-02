@@ -1,0 +1,24 @@
+ CREATE TABLE funcionarios (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    cargo VARCHAR(50) NOT NULL,
+    departamento VARCHAR(50) NOT NULL,
+    salario DOUBLE PRECISION NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    data_admissao VARCHAR(10) NOT NULL,
+    ativo BOOLEAN NOT NULL
+);
+
+INSERT INTO funcionarios (nome, cpf, cargo, departamento, salario, email, telefone, data_admissao, ativo) VALUES
+('Ana Silva', '123.456.789-00', 'Analista de RH', 'Recursos Humanos', 4200.00, 'ana.silva@empresa.com', '(11) 98765-4321', '2022-03-15', true),
+('Bruno Souza', '234.567.890-11', 'Desenvolvedor Back-end', 'TI', 5500.00, 'bruno.souza@empresa.com', '(11) 99876-1234', '2021-11-01', true),
+('Carlos Mendes', '345.678.901-22', 'Designer Gráfico', 'Marketing', 3900.00, 'carlos.mendes@empresa.com', '(11) 91234-5678', '2020-07-22', true),
+('Daniela Lima', '456.789.012-33', 'Coordenadora de Projetos', 'Engenharia', 6800.00, 'daniela.lima@empresa.com', '(11) 93456-7890', '2019-05-10', true),
+('Eduardo Castro', '567.890.123-44', 'Analista Financeiro', 'Financeiro', 4700.00, 'eduardo.castro@empresa.com', '(11) 97654-3210', '2023-01-05', true),
+('Fernanda Rocha', '678.901.234-55', 'Atendente', 'SAC', 2300.00, 'fernanda.rocha@empresa.com', '(11) 94567-8901', '2021-09-30', true),
+('Gustavo Nunes', '789.012.345-66', 'Gerente de Vendas', 'Comercial', 7200.00, 'gustavo.nunes@empresa.com', '(11) 95678-9012', '2018-02-14', true),
+('Helena Barbosa', '890.123.456-77', 'Analista de Dados', 'TI', 6100.00, 'helena.barbosa@empresa.com', '(11) 96789-0123', '2022-08-18', true),
+('Igor Ferreira', '901.234.567-88', 'Técnico de Suporte', 'TI', 3100.00, 'igor.ferreira@empresa.com', '(11) 97890-1234', '2020-12-01', true),
+('Juliana Almeida', '012.345.678-99', 'Assistente Administrativo', 'Administrativo', 2800.00, 'juliana.almeida@empresa.com', '(11) 98901-2345', '2023-04-20', true);
